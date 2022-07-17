@@ -1,0 +1,42 @@
+.pop-up{
+    animation: popup 1s 1 forwards ease-out;
+}
+
+@keyframes popup {
+    from{
+        opacity: 0;
+        transform: scale(0.9) translateY(150px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.slide-from-left{
+    animation: slidefromleft 1s  1 forwards ease-out;
+}
+
+@keyframes slidefromleft {
+    from{
+        opacity: 0;
+        transform: scale(0.5) translateX(-100%);
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+.slide-from-right{
+    animation: slidefromright 1s  1 forwards ease-out;
+}
+
+@keyframes slidefromright {
+    from{
+        opacity: 0;
+        transform: scale(0.5) translateX(100%);
+    }
+    to{
+        opacity: 1;
+    }
+
+}

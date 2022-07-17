@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+$input-btn-padding-y: 10px;
+$input-btn-padding-x: 35px;
+
+
+
+.royal-theme{
+    @import "./royal-theme";
+    @import "../assets/libs/bootstrap-5.2.0-beta1/scss/bootstrap.scss";
+}
+
+.normal-theme{
+    @import './normal-theme';
+    @import "../assets/libs/bootstrap-5.2.0-beta1/scss/bootstrap.scss";
+}
+
+@import "../assets/libs/bootstrap-5.2.0-beta1/scss/bootstrap.scss";
+
+@import "./header";
+@import "./about";
+@import "./properties";
+@import "./adv";
+@import "./services";
+@import "./customer";
+@import "./contact";
+@import "./clients";
+@import "./footer";
+
+
+.plannco-properties,
+.plannco-adv,
+.plannco-adv__content,
+.plannco-adv__img,
+.plannco-services,
+.plannco-customer,
+.plannco-contact__form,
+.plannco-contact__img{
+    opacity: 0;
+}
+
+
+
+@import "./animation";
+
+
+
+
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #999;
+}
+
+*{
+    scroll-margin-top: 250px;
+}
+
+body {
+    $font-size: 16px;
+
+    font-size: $font-size;
+    padding: 0 50px;
+    // overflow-x: hidden;
+
+
+    h1{
+        // font-size: 10px;
+        font-size: $font-size * 3;
+    }
+    
+    h2{
+        // font-size: $font-size * 2;
+        font-size: $font-size *2;
+    }
+    
+    h4{
+        font-size: $font-size *1.25;
+    }
+    
+    p {
+        font-size: $font-size;
+        font-weight: 200;
+        // color: #222;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+    }
+
+    .btn-custom{
+        padding: 10px 35px;
+    }
+
+    .btn-custom.btn-primary{
+        color: #000;
+    }
+
+    
+}
+
+
+
+
+
+@include media-breakpoint-down(lg){
+    body{
+        padding: 0 30px;
+    }
+}
+@include media-breakpoint-down(sm){
+    ::-webkit-scrollbar {
+	    height: 4px;
+    }
+    *{
+        scroll-margin-top: 50px;
+    }
+    body{
+        $font-size: 14px;
+        padding: 0 15px;
+
+        h1{
+            font-size: $font-size*3;
+        }
+
+        h2{
+            font-size: $font-size*2;
+        }
+        h4{
+            font-size: $font-size*1.25;
+        }
+        p{
+            font-size: $font-size;
+            font-weight: 400;
+
+        }
+
+        .btn{
+            padding: 10px 20px;
+        }
+    }
+}
+
+

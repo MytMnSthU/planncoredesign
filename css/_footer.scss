@@ -1,0 +1,70 @@
+.plannco-footer{
+    background-color: #333;
+    border-radius: 10px;
+
+    margin: 10px 0;
+
+    &__container{
+        max-width: 1200px;
+
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        grid-gap: 20px;
+
+        padding: 30px 10px;
+
+        h4{
+            font-size: 16px;
+            font-weight: bold;
+
+            padding: 12px 0;
+        }
+        p,
+        address{
+            font-weight: lighter;
+            color: #fff;
+        }
+
+        p{
+            padding-left: 55px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                font-size: 14px;
+
+                display: inline-block;
+
+                padding: 5px 0;
+
+                border: 1px solid transparent;
+                transition:  all ease 0.3s;
+
+                &:hover{
+                    border-bottom-color: #fff;
+                    color: #fff;
+                }
+            }
+        }
+
+        
+    
+
+        &-col:not(:first-child){
+            padding-left: 50px;
+        }
+    }
+
+    &__social-icon{
+        width: 20px;
+    }
+}

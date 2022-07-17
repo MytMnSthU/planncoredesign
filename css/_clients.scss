@@ -1,0 +1,36 @@
+.plannco-clients {
+    &__container{
+        overflow: hidden;
+    }
+    &__img {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+
+// @include media-breakpoint-down(md) {
+//     .plannco-clients {
+//         &__img {
+//             width: 100%;
+//             max-width: 200px;
+//         }
+//     }
+// }
+@include media-breakpoint-down(md) {
+    .plannco-clients {
+       
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .plannco-clients {
+        
+        &__container{
+            overflow-x: scroll;
+        }
+
+        &__img {
+            width: 100px;
+        }
+    }
+}

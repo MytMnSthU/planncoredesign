@@ -1,0 +1,51 @@
+.plannco-contact{
+
+    &__content{
+        gap: 100px;
+    }
+
+    &__form{
+        width: 100%;
+        max-width: 500px;
+
+        form{
+            width: 100%;
+
+            div{
+                margin: 20px 0;
+            }
+        }
+    }
+
+    &__input{
+        width: 100%;
+        background-color: transparent;
+
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+
+        margin-top: 5px;
+        padding: 5px;
+
+        display: block;
+
+        &:focus{
+           outline: none;
+           border-bottom-color: $blue;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+@include media-breakpoint-down(lg){
+    .plannco-contact{
+        &__content{
+            gap: 50px;
+        }
+    }
+}

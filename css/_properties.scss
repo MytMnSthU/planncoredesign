@@ -1,0 +1,76 @@
+.plannco-properties {
+    &__filter-menu {
+        width: 100%;
+        max-width: 550px;
+        height: 70px;
+        // background-color: orange;
+
+        list-style: none;
+
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10px;
+        padding: 0;
+
+        overflow: hidden;
+
+        &-item {
+            // width: 100px;
+            padding: 5px 20px;
+            cursor: pointer;
+
+            border-radius: 5px;
+            position: relative;
+
+            transition: all 0.2s ease;
+        }
+        &-item.active {
+            color: #fff;
+        }
+
+        .block {
+            width: 100%;
+            height: 100%;
+            background-color: $secondary;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            border-radius: 5px;
+
+            transition: all ease 0.2s;
+
+            z-index: -1;
+        }
+    }
+
+    img {
+        width: 180px;
+
+        border-radius: 5px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .plannco-properties {
+        
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .plannco-properties {
+
+        &__filter-menu {
+            overflow-x: scroll;
+            justify-content: start;
+        }
+        
+        img {
+            width: 100%;
+        }
+    }
+}

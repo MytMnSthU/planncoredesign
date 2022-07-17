@@ -1,0 +1,22 @@
+.plannco-adv{
+    gap: 120px;
+    border-radius: 10px;
+
+    // &__content,
+    // img{
+    //     opacity: 0;
+    // }
+
+    &__content{
+        width: 100%;
+        max-width: 500px;
+
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+}
